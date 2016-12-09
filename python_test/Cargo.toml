@@ -1,0 +1,16 @@
+[package]
+name = "python"
+version = "0.1.0"
+authors = ["foo bar"]
+
+[lib]
+name = "python_test"
+crate-type = ["dylib"]
+
+[dependencies]
+interpolate_idents = "*"
+
+[dependencies.cpython]
+version = "*"
+default-features = false
+features = ["python27-sys"]
